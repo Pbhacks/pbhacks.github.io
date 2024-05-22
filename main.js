@@ -6,7 +6,7 @@ function settingtoggle() {
 }
 
 function playpause() {
-    !0 == document.getElementById("switchforsound").checked ? audio.play() : audio.pause()
+    audio.play();
 }
 
 function visualmode() {
