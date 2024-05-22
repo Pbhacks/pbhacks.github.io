@@ -6,7 +6,7 @@ function settingtoggle() {
 }
 
 function playpause() {
-    audio.play();
+    !1 == document.getElementById("switchforsound").checked ? audio.pause() : audio.play()
 }
 
 function visualmode() {
@@ -40,7 +40,7 @@ window.addEventListener("scroll", () => {
     }), navLi.forEach(t => {
         t.classList.remove("activeThistab"), t.classList.contains(e) && t.classList.add("activeThistab")
     })
-}), console.log("%c Designed and Developed by Priyant Banerjee ", "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;");
+}), console.log("%c Designed and Developed by Priyant ", "background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;");
 let mybutton = document.getElementById("backtotopbutton");
 
 function scrollFunction() {
