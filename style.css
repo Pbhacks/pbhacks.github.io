@@ -91,8 +91,8 @@ background: linear-gradient(90deg, rgba(19,27,106,1) 0%, rgba(0,10,117,1) 0%, rg
 	cursor: default;
 	--color-white: #fff;
 	--color-black: #000;
-	--color-dark-mode: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(140,0,80,1) 100%, rgba(176,3,126,1) 100%);
-	--color-light-mode: #ece7e1;
+	--color-dark-mode: linear-gradient(90deg, rgba(19,27,106,1) 0%, rgba(0,10,117,1) 0%, rgba(0,0,0,1) 55%, rgba(176,3,126,1) 100%);
+	--color-light-mode: #5f3a0d;
 	--color-ddd-color: #ddd;
 	--color-gray: #c4c4c4;
 	--color-purple: #2600ff;
@@ -1646,7 +1646,8 @@ footer {
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
-		z-index: 9998
+		z-index: 9998;
+		
 	}
 
 	.activeThismobiletab:before,
@@ -1664,6 +1665,7 @@ footer {
 		align-items: center;
 		justify-content: flex-end;
 		padding: 20px
+		
 	}
 
 	#hamburger-button {
@@ -1712,7 +1714,13 @@ footer {
 	}
 
 	.mobiletogglemenu {
-		background-color: transparent;
+		
+		backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+	
 		z-index: 9990;
 		height: 100%;
 		width: 100%;
